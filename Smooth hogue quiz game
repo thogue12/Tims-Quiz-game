@@ -1,0 +1,99 @@
+# This is a Smooth Hogue Quiz games
+
+print("Hello welcome to Smooth Hogues interactive quiz")
+print("what is your name? ")
+name = input()
+print("it is good to meet you " + name)
+playing = input("Do you want to play? ")
+if playing.lower() != "yes":
+# line 8 is my conditional statemnet stating if the users input does not eqal yes then the program is terminated
+    quit()
+print("okay! lets play :)")
+score = 0
+
+answer = input("what does CPU stand for? ")
+if answer.lower() == "central processing unit":
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect!")
+
+answer = input("what does GPU stand for? ")
+if answer.lower() == "graphics processing unit":
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect!")
+
+answer = input("what is supermans secrete indentity? ")
+if answer.lower() == "clark kent":
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect!")
+
+answer = input("what anime character is known for his talk no jutsu? ")
+if answer.lower() == "naruto":
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect!")
+
+answer = input("what is the capital of Michigan ")
+if answer.lower() == "lansing":
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect!") 
+
+answer = input("who invented the first alternating current/AC motor? ")
+if answer.lower() == "nikola tesla":
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect!")
+
+answer = input("who is considerd to be the father of jazz? ")
+if answer.lower() == "louis armstrong":
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect!") 
+
+answer = input("how many feet are in a mile? ")
+if answer.lower() == "5,280ft":
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect!")
+
+answer = input("who is the most well known philosopher? ")
+if answer.lower() == "aristotle":
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect!")
+
+answer = input("what is the answer to life, the universe, Everything!!")
+if answer.lower() == "42":
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect!")
+
+answer = input("what force is required for circular motion? ")
+if answer.lower() == "centripetal force":
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect!")
+
+answer = input("what does PSU stand for? ")
+if answer.lower() == "power supply":
+    print("Correct!")
+    score += 1
+else:
+    print("Incorrect!")
+
+print("Congratulations " + name + " You got " + str(score) + " questions correct!")
+print(" You got " + str(score/12 * 100) +  "%")
